@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS products (id TEXT PRIMARY KEY,name TEXT NOT NULL,slug TEXT UNIQUE,category TEXT NOT NULL,collection TEXT DEFAULT '',description TEXT DEFAULT '',price INTEGER NOT NULL,compare_price INTEGER DEFAULT 0,active INTEGER DEFAULT 1,featured INTEGER DEFAULT 0,created_at TEXT DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS variants (id TEXT PRIMARY KEY,product_id TEXT NOT NULL,size TEXT DEFAULT 'One Size',color TEXT DEFAULT 'Default',sku TEXT DEFAULT '',stock INTEGER NOT NULL DEFAULT 0,FOREIGN KEY(product_id) REFERENCES products(id));
+CREATE TABLE IF NOT EXISTS product_images (id TEXT PRIMARY KEY,product_id TEXT NOT NULL,url TEXT NOT NULL,sort_order INTEGER DEFAULT 0,FOREIGN KEY(product_id) REFERENCES products(id));
+CREATE TABLE IF NOT EXISTS orders (id TEXT PRIMARY KEY,email TEXT NOT NULL,customer_name TEXT NOT NULL,phone TEXT DEFAULT '',address_json TEXT NOT NULL,items_json TEXT NOT NULL,subtotal INTEGER NOT NULL,shipping INTEGER NOT NULL DEFAULT 0,total INTEGER NOT NULL,currency TEXT DEFAULT 'USD',payment_status TEXT DEFAULT 'pending',fulfillment_status TEXT DEFAULT 'unfulfilled',stripe_session_id TEXT DEFAULT '',created_at TEXT DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY,value TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS subscribers (email TEXT PRIMARY KEY,created_at TEXT DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX IF NOT EXISTS idx_products_category ON products(category,active);
+CREATE INDEX IF NOT EXISTS idx_images_product ON product_images(product_id,sort_order);
+CREATE INDEX IF NOT EXISTS idx_variants_product ON variants(product_id);
+CREATE INDEX IF NOT EXISTS idx_orders_email ON orders(email);
