@@ -10,7 +10,7 @@
 /* CHEYENNE identity */
 h1,h2,.brand,.hero-copy h1{font-family:'Italiana',Georgia,serif!important;font-weight:400!important}body{font-family:'Jost',sans-serif!important}.brand-logo{width:165px;height:65px;object-fit:contain;object-position:left center;display:block}.footer-logo{width:220px;height:145px;object-fit:contain;object-position:left center}.hero-copy h1{font-size:clamp(65px,9vw,155px)}.product-photo img,.detail-image img{object-fit:cover}.hero-visual img{object-fit:cover}.mini-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}.mini-gallery button{background:#171717;border:1px solid #333;padding:0;cursor:pointer}.mini-gallery img{width:100%;height:100px;object-fit:cover}.detail-image>img{width:100%;max-height:680px;object-fit:contain;background:#151515}.admin-shell{display:grid;grid-template-columns:230px 1fr;min-height:80vh}.admin-sidebar{background:#121111;padding:28px 18px;border-right:1px solid #302a28}.admin-sidebar button{display:block;width:100%;text-align:left;padding:14px;color:#ddd;background:none;border:0;cursor:pointer}.admin-sidebar button:hover,.admin-sidebar button.active{background:#292320;color:#fff}.admin-main{padding:35px;min-width:0}.admin-main input,.admin-main select,.admin-main textarea{width:100%;padding:13px;margin:7px 0;background:#191919;border:1px solid #49413c;color:#fff;border-radius:0}.admin-main label{font-size:12px;letter-spacing:.1em}.admin-table{width:100%;border-collapse:collapse;font-size:13px}.admin-table td,.admin-table th{padding:12px;border-bottom:1px solid #36302e;text-align:left}.admin-table img{height:56px;width:50px;object-fit:cover}.admin-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.admin-tabs button,.admin-btn{padding:10px 17px;background:#2a2522;color:#f3e9da;border:1px solid #615348;cursor:pointer}.admin-btn.primary{background:#eee6d6;color:#171310}.admin-card{padding:24px;background:#151414;border:1px solid #37302d;margin:15px 0}.admin-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px}.admin-gallery img{height:110px;width:100%;object-fit:cover}.admin-gallery button{display:block;width:100%;padding:7px}.admin-grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}.notice{padding:13px;background:#2b221e;border-left:2px solid #d1b79a;margin:12px 0}.admin-mobile{display:none}@media(max-width:800px){.admin-shell{display:block}.admin-sidebar{display:flex;overflow-x:auto;padding:8px}.admin-sidebar button{white-space:nowrap;width:auto}.admin-main{padding:18px}.admin-grid2{grid-template-columns:1fr}.admin-table{display:block;overflow-x:auto}.brand-logo{width:125px;height:54px}.footer-logo{width:170px;height:110px}.mini-gallery img{height:65px}} 
 
-/* CHEYENNE V3 — full-bleed editorial hero and mobile-first refinements */
+/* CHEYENNE V3 â€” full-bleed editorial hero and mobile-first refinements */
 html,body{max-width:100%;overflow-x:clip}body{font-size:15px}header{height:84px;padding-inline:clamp(20px,5vw,90px);position:relative;z-index:30}.brand{display:flex;align-items:center;justify-content:center;width:175px;height:76px;flex-shrink:0}.brand-logo{width:165px;height:72px;object-fit:contain;object-position:center}nav a,.actions a{transition:color .25s ease,opacity .25s ease}nav a:hover,.actions a:hover{color:#e2c9a8}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #e2c9a8;outline-offset:4px}
 .couture-hero{height:min(850px,86svh);min-height:660px;display:flex;align-items:center;position:relative;padding:clamp(35px,7vw,125px);background:#080706 url('assets/cheyenne-053805.png') center 46%/cover no-repeat!important;isolation:isolate}.couture-hero:before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(3,2,3,.97) 0%,rgba(4,3,4,.86) 29%,rgba(5,4,5,.42) 56%,rgba(0,0,0,.05) 100%),linear-gradient(0deg,rgba(0,0,0,.4),transparent 28%);pointer-events:none}.hero-copy{position:relative;z-index:2;width:min(680px,57%);padding:0;text-align:left;animation:heroCopyIn .95s both}.couture-hero h1{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(62px,8vw,134px);letter-spacing:-.065em;white-space:normal;line-height:.95;margin:30px 0 18px;text-shadow:0 3px 25px #0007}.hero-subtitle{font-size:12px;letter-spacing:.52em;padding-left:4px}.hero-rule{margin:35px 0 18px}.couture-hero p{font-size:17px;line-height:1.7}.hero-visual{display:none}.hero-cta{min-width:235px;justify-content:center;transition:transform .3s,background .3s,color .3s}.hero-cta:hover{transform:translateY(-4px)}@keyframes heroCopyIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .category-strip>a{overflow:hidden}.category-strip img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s}.category-strip a:hover img{transform:scale(1.07);filter:brightness(.85)}.product-photo img{transition:transform .65s cubic-bezier(.2,.7,.2,1)}.product:hover .product-photo img{transform:scale(1.055)}.btn{transition:transform .25s,background .25s,color .25s}.btn:hover{transform:translateY(-3px)}
@@ -73,3 +73,38 @@ html,body{max-width:100%;overflow-x:clip}body{font-size:15px}header{height:84px;
 
 /* Manual-payment checkout */
 .ch-checkout{max-width:940px}.ch-checkout form{display:grid;gap:22px}.ch-checkout-card{padding:clamp(22px,4vw,38px);background:#1a1514;border:1px solid #403531;border-radius:12px}.ch-checkout-card h2{margin:10px 0 22px}.ch-checkout-card label:not(.ch-payment-option){display:block;font-size:13px;color:#d8cdc5;margin:0 0 15px}.ch-checkout-card input:not([type=radio]){width:100%;margin-top:8px;background:#231d1b;color:#f7f1e8;border:1px solid #534640;border-radius:8px;padding:15px;font-size:16px}.ch-payment-option{display:flex;align-items:flex-start;gap:15px;padding:18px;margin:12px 0;border:1px solid #5b4a43;border-radius:10px;cursor:pointer}.ch-payment-option input{margin-top:5px;accent-color:#d8c2aa}.ch-payment-option span{display:grid;gap:6px}.ch-payment-option small,.ch-small-note{display:block;color:#b7aaa1;font-size:13px;line-height:1.65}.ch-summary-item{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #3b302c}.ch-summary-item img{width:64px;height:74px;object-fit:cover;border-radius:7px}.ch-summary-item span{flex:1}.ch-summary-item small{display:block;color:#b7aaa1;margin-top:5px}.ch-summary-total{display:flex;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid #403531}.ch-confirm-mark{width:64px;height:64px;border:1px solid #d8c2aa;border-radius:50%;display:grid;place-items:center;font-size:34px;margin:30px 0}.ch-confirm .btn{margin-top:25px}.ch-confirm p{line-height:1.8}@media(max-width:600px){.ch-checkout-card{padding:20px}.ch-checkout .two{display:grid;grid-template-columns:1fr;gap:0}.ch-checkout-card h2{font-size:30px}.ch-summary-item strong{white-space:nowrap}}
+/* CHEYENNE â€” mobile navigation overlay, stable on scroll */
+@media (max-width:800px){
+  body.menu-open{overflow:hidden!important;}
+  body.menu-open header{
+    position:fixed!important;
+    top:0!important;left:0!important;right:0!important;
+    width:100%!important;
+    z-index:10002!important;
+    background:#090707!important;
+    border-bottom:1px solid #302725;
+  }
+  body.menu-open .mobile-menu{
+    position:relative!important;
+    z-index:10004!important;
+    flex-shrink:0;
+  }
+  .mobile-nav{
+    position:fixed!important;
+    inset:0!important;
+    width:100%!important;
+    height:100dvh!important;
+    max-height:100dvh!important;
+    box-sizing:border-box!important;
+    z-index:10001!important;
+    background:#090707!important;
+    padding:calc(86px + env(safe-area-inset-top, 0px)) 7% max(30px,env(safe-area-inset-bottom, 0px))!important;
+    justify-content:flex-start!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+    transform:none!important;
+  }
+  body.menu-open .mobile-nav{opacity:1!important;visibility:visible!important;display:flex!important;}
+  .mobile-nav a{flex-shrink:0;}
+}
